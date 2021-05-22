@@ -22,13 +22,14 @@ class BladeIcomoonServiceProvider extends PackageServiceProvider
     public function registeringPackage()
     {
         $this->callAfterResolving(
-            Factory::class, function (Factory $factory, Container $container) {
+            Factory::class,
+            function (Factory $factory, Container $container) {
                 $config = $container
                     ->make('config')
                     ->get(self::PACKAGE_NAME, []);
 
                 $factory->add(self::ICON_SET, array_merge([
-                    'path' => __DIR__ . '/../resources/svg'
+                    'path' => __DIR__ . '/../resources/svg',
                 ], $config));
             }
         );

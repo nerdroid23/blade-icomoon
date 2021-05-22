@@ -119,7 +119,7 @@ class CompilesIconsTest extends TestCase
         ]);
 
         $result = svg('icomoon-appleinc', '', [
-            'width'  => 32,
+            'width' => 32,
             'height' => 32,
         ])->toHtml();
 
