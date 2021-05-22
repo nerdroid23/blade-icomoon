@@ -2,7 +2,7 @@
 
 namespace Nerdroid23\BladeIcomoon\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use BladeUI\Icons\BladeIconsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Nerdroid23\BladeIcomoon\BladeIcomoonServiceProvider;
 
@@ -16,6 +16,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
+            BladeIconsServiceProvider::class,
             BladeIcomoonServiceProvider::class,
         ];
     }
