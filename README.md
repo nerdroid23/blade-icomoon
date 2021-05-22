@@ -152,8 +152,8 @@ Please review [our security policy](.github/SECURITY.md) on how to report securi
 
 ## Credits
 
-- [Joe Sylnice][link-author]
-- [All Contributors][link-contributors]
+- [Joe Sylnice](https://github.com/nerdroid23)
+- [All Contributors](../../contributors)
 
 ## License
 
