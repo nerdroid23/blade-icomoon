@@ -2,6 +2,8 @@
 ## VERSION 1  INITIAL RELEASE
 
  * Version **1.0** - initial release
+   * 2021-05-22 21:48  **1.0.2**  add version to composer.json
+      * ee84306 add version to composer.json
    * 2021-05-22 21:41  **1.0.1**  minor fixes
       * 68d72da wip
       * cc0c4d3 Update README.md
