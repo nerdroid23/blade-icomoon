@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace Nerdroid23\BladeIcomoon\Tests;
 
 class ExampleTest extends TestCase
 {

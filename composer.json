@@ -1,46 +1,43 @@
 {
-    "name": "vendor_slug/package_slug",
-    "description": ":package_description",
+    "name": "nerdroid23/blade-icomoon",
+    "description": "A package to easily make use of \"IcoMoon\" in your Laravel Blade views.",
     "keywords": [
-        ":vendor_name",
         "laravel",
-        "package_slug"
+        "blade",
+        "icomoon"
     ],
-    "homepage": "https://github.com/vendor_slug/package_slug",
+    "homepage": "https://github.com/nerdroid23/blade-icomoon",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Joe Sylnice",
+            "email": "nerdroid23@gmail.com",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": "^8.0",
+        "php": "^7.4|^8.0",
         "spatie/laravel-package-tools": "^1.4.3",
-        "illuminate/contracts": "^8.37"
+        "blade-ui-kit/blade-icons": "^1.0",
+        "illuminate/support": "^8.0"
     },
     "require-dev": {
         "brianium/paratest": "^6.2",
         "nunomaduro/collision": "^5.3",
         "orchestra/testbench": "^6.15",
-        "phpunit/phpunit": "^9.3",
-        "spatie/laravel-ray": "^1.9",
-        "vimeo/psalm": "^4.4"
+        "phpunit/phpunit": "^9.3"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Nerdroid23\\BladeIcomoon\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Nerdroid23\\BladeIcomoon\\Tests\\": "tests"
         }
     },
     "scripts": {
-        "psalm": "vendor/bin/psalm",
         "test": "./vendor/bin/testbench package:test --parallel --no-coverage",
         "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
@@ -50,11 +47,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
-            ],
-            "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\SkeletonFacade"
-            }
+                "Nerdroid23\\BladeIcomoon\\BladeIcomoonServiceProvider"
+            ]
         }
     },
     "minimum-stability": "dev",
