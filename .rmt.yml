@@ -1,0 +1,35 @@
+_default:
+  vcs: git
+
+  # PREREQUISITES
+  #  Actions executed before any questions get asked to the user.
+  prerequisites:
+    - working-copy-check
+    - display-last-changes
+    - tests-check:
+        command: composer test
+    - composer-stability-check
+
+  # GENERAL CONFIG
+  #  Apply to all branches except the one from the 'branch-specific' section
+  version-generator: simple # Simple versioning
+  version-persister:
+    vcs-tag: # Release with VCS tag
+      tag-prefix: "{branch-name}_"   # Prefix any tag with the VCS branch name
+  post-release-actions:
+    vcs-publish: # Publish the release to the VCS
+      ask-confirmation: true
+
+# BRANCH SPECIFIC CONFIG
+#  On main, we override the general config
+main:
+  version-generator: semantic # More complex versioning (semantic)
+  version-persister:
+    vcs-tag:
+      tag-prefix: 'v' # No more prefix for tags
+  pre-release-actions:
+    changelog-update: # Update a CHANGELOG file before the release
+      format: markdown
+      file: CHANGELOG.md
+      dump-commits: true
+    vcs-commit: ~  # Commit the CHANGELOG
