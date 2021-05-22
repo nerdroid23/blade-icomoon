@@ -28,6 +28,7 @@ main:
     vcs-tag:
       tag-prefix: 'v' # No more prefix for tags
   pre-release-actions:
+    composer-update: ~
     changelog-update: # Update a CHANGELOG file before the release
       format: markdown
       file: CHANGELOG.md
