@@ -50,7 +50,7 @@ return [
     */
 
     'attributes' => [
-        // 'fill'   => 'currentColor',
+        'fill'   => 'currentColor',
         // 'width'  => 32,
         // 'height' => 32,
     ],
