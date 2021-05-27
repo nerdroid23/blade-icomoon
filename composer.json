@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "nerdroid23/blade-icomoon",
     "description": "A package to easily make use of \"IcoMoon\" in your Laravel Blade views.",
     "keywords": [
