@@ -1,3 +1,11 @@
+
+## VERSION 2  UPDATE FOR LARAVEL 11 COMPATIBILITY
+
+ * Version **2.0** - Update for laravel 11 compatibility
+   * 2024-12-10 01:19  **2.0.0**  initial release
+      * 023fd14 Merge pull request #5 from swapnilsarwe/laravel11-support
+      * ec056f0 reverting the changes - done temporarily
+      * 7c19d9c laravel 11 support dependency matrix update in test action phpunit.xml update with latest changes
 All notable changes to `blade-icomoon` will be documented in this file.
 
 ## VERSION 1  INITIAL RELEASE
